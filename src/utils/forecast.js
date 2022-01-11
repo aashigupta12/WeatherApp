@@ -11,7 +11,7 @@ const url = 'http://api.weatherstack.com/current?access_key=69ce258c6931d95372cf
       callback('Unable able to find location', undefined);
     }
     else {
-      callback(undefined, body.current.weather_descriptions[0] + '. It is currently ' + body.current.temperature + ' degrees out. It feels like ' + body.current.feelslike + ' degrees out.'); 
+      callback(undefined, body.current.weather_descriptions[0] + '. It is currently ' + body.current.temperature + ' degrees out. It feels like ' + body.current.feelslike + ' degrees out. The humidity is '+ body.current.humidity + '%.'); 
     }
   })         
 }
